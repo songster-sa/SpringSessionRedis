@@ -9,3 +9,15 @@ Session management can be achieved in one of the following ways-
 - HttpSession
 
 In this exercise, we use Spring boot and Redis for session management
+-------------------------------------------------------------------------------
+TODO
+
+Spring Session provides an API and implementations for managing a user’s session information. It also provides transparent integration with:
+
+HttpSession - allows replacing the HttpSession in an application container (i.e. Tomcat) neutral way. Additional features include:
+
+Clustered Sessions - Spring Session makes it trivial to support clustered sessions without being tied to an application container specific solution.
+
+Multiple Browser Sessions - Spring Session supports managing multiple users' sessions in a single browser instance (i.e. multiple authenticated accounts similar to Google).
+
+RESTful APIs - Spring Session allows providing session ids in headers to work with RESTful APIs

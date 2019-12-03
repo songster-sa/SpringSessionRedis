@@ -1,5 +1,6 @@
 package com.expore.spring.springsession.controller;
 
+import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -14,10 +15,12 @@ public class SessionController {
 
     @GetMapping("/")
     public String createSession(Model model, HttpSession session) {
-        return null;
+        model.addAttribute("sessionMessages", new ArrayList<>());
+        model.addAttribute("sessionid", "");
+        return "index";
     }
 
-    @PostMapping("/")
+    @PostMapping("/save")
     public String saveSession(@RequestParam("msg") String msg, HttpServletRequest request) {
         return null;
     }
